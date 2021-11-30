@@ -8,15 +8,15 @@ function ContentRowMovies(props) {
     <div >
       {datos.map((item,i)=>
        <div key={i}>
-        <div class="col-md-4 mb-4">
-        <div class={item.color}>
-          <div class="card-body">
-            <div class="row no-gutters align-items-center">
-              <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">{item.titulo}</div>
-                <div class="h5 mb-0 font-weight-bold text-gray-800">{item.cifra}</div>
+        <div className="col-md-4 mb-4">
+        <div className={item.color}>
+          <div className="card-body">
+            <div className="row no-gutters align-items-center">
+              <div className="col mr-2">
+                <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">{item.titulo}</div>
+                <div className="h5 mb-0 font-weight-bold text-gray-800">{item.cifra}</div>
               </div>
-              <div class="col-auto">
+              <div className="col-auto">
                 <i className={item.icono}></i>
               </div>
             </div>
@@ -24,7 +24,7 @@ function ContentRowMovies(props) {
         </div>
       </div>
      </div> 
-      )}
+     )}
         
         
         
@@ -39,14 +39,14 @@ function ContentRowMovies(props) {
 ContentRowMovies.propTypes = {
   titulo:PropTypes.array.isRequired,
   icono:PropTypes.array.isRequired,
-  cifra:PropTypes.array.isRequired,
   color: PropTypes.array.isRequired,
+  cifra:PropTypes.array.isRequired,
   };
   ContentRowMovies.defaultProps = {
-  titulo:"No se encuentra titulo",
-  icono:"Icono inaccesible",
+  titulo:"ingresar titulo",
+  icono:"ingresar icono",
+  color: "",
   cifra: 0,
-  color: "null",
   };
 
 export default ContentRowMovies;

@@ -4,14 +4,14 @@ function SideBar() {
   return (
     <div>
       <ul
-        class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion"
+        className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion"
         id="accordionSidebar"
       >
         <a
-          class="sidebar-brand d-flex align-items-center justify-content-center"
+          className="sidebar-brand d-flex align-items-center justify-content-center"
           href="/"
         >
-          <div class="sidebar-brand-icon">
+          <div className="sidebar-brand-icon">
             <img
               className="w-100"
               src={logo}
@@ -20,20 +20,20 @@ function SideBar() {
           </div>
         </a>
 
-        <hr class="sidebar-divider my-0" />
+        <hr className="sidebar-divider my-0" />
 
-        <li class="nav-item active">
-          <a class="nav-link" href="/">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+        <li className="nav-item active">
+          <a className="nav-link" href="/">
+            <i className="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard - DH movies</span>
           </a>
         </li>
 
-        <div class="sidebar-heading">Actions</div>
+        <div className="sidebar-heading">Actions</div>
 
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="/">
-            <i class="fas fa-fw fa-folder"></i>
+        <li className="nav-item">
+          <a className="nav-link collapsed" href="/">
+            <i className="fas fa-fw fa-folder"></i>
             <span>Pages</span>
           </a>
         </li>
